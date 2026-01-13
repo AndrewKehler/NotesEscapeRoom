@@ -1,0 +1,38 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://cujxhjafgh085"
+path.s3tc="res://.godot/imported/BookshelfLarge_ShelfLargeDoorNormal.png-6a3260ad5105f0dc6c3e46872d28ff11.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
+generator_parameters={
+"md5": "f7bea3c71ef17b607386b29a5229d4cd"
+}
+
+[deps]
+
+source_file="res://Models/Textures/BookshelfLarge/BookshelfLarge_ShelfLargeDoorNormal.png"
+dest_files=["res://.godot/imported/BookshelfLarge_ShelfLargeDoorNormal.png-6a3260ad5105f0dc6c3e46872d28ff11.s3tc.ctex"]
+
+[params]
+
+compress/mode=2
+compress/high_quality=false
+compress/lossy_quality=0.7
+compress/hdr_compression=1
+compress/normal_map=1
+compress/channel_pack=0
+mipmaps/generate=true
+mipmaps/limit=-1
+roughness/mode=1
+roughness/src_normal="res://Models/BookshelfLarge_ShelfLargeDoorNormal.png"
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/normal_map_invert_y=false
+process/hdr_as_srgb=false
+process/hdr_clamp_exposure=false
+process/size_limit=0
+detect_3d/compress_to=0

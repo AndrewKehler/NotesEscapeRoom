@@ -1,0 +1,17 @@
+C:\Users\anggr\OneDrive\Documents\Godot\NotesEscapeRoom\notesescaperoom\.godot\mono\temp\bin\Debug\NotesEscapeRoom.deps.json
+C:\Users\anggr\OneDrive\Documents\Godot\NotesEscapeRoom\notesescaperoom\.godot\mono\temp\bin\Debug\NotesEscapeRoom.runtimeconfig.json
+C:\Users\anggr\OneDrive\Documents\Godot\NotesEscapeRoom\notesescaperoom\.godot\mono\temp\bin\Debug\NotesEscapeRoom.dll
+C:\Users\anggr\OneDrive\Documents\Godot\NotesEscapeRoom\notesescaperoom\.godot\mono\temp\bin\Debug\NotesEscapeRoom.pdb
+C:\Users\anggr\OneDrive\Documents\Godot\NotesEscapeRoom\notesescaperoom\.godot\mono\temp\bin\Debug\GodotSharp.dll
+C:\Users\anggr\OneDrive\Documents\Godot\NotesEscapeRoom\notesescaperoom\.godot\mono\temp\bin\Debug\GodotSharpEditor.dll
+C:\Users\anggr\OneDrive\Documents\Godot\NotesEscapeRoom\notesescaperoom\.godot\mono\temp\obj\Debug\NotesEscapeRoom.csproj.AssemblyReference.cache
+C:\Users\anggr\OneDrive\Documents\Godot\NotesEscapeRoom\notesescaperoom\.godot\mono\temp\obj\Debug\NotesEscapeRoom.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\anggr\OneDrive\Documents\Godot\NotesEscapeRoom\notesescaperoom\.godot\mono\temp\obj\Debug\NotesEscapeRoom.AssemblyInfoInputs.cache
+C:\Users\anggr\OneDrive\Documents\Godot\NotesEscapeRoom\notesescaperoom\.godot\mono\temp\obj\Debug\NotesEscapeRoom.AssemblyInfo.cs
+C:\Users\anggr\OneDrive\Documents\Godot\NotesEscapeRoom\notesescaperoom\.godot\mono\temp\obj\Debug\NotesEscapeRoom.csproj.CoreCompileInputs.cache
+C:\Users\anggr\OneDrive\Documents\Godot\NotesEscapeRoom\notesescaperoom\.godot\mono\temp\obj\Debug\NotesEsc.3E720989.Up2Date
+C:\Users\anggr\OneDrive\Documents\Godot\NotesEscapeRoom\notesescaperoom\.godot\mono\temp\obj\Debug\NotesEscapeRoom.dll
+C:\Users\anggr\OneDrive\Documents\Godot\NotesEscapeRoom\notesescaperoom\.godot\mono\temp\obj\Debug\refint\NotesEscapeRoom.dll
+C:\Users\anggr\OneDrive\Documents\Godot\NotesEscapeRoom\notesescaperoom\.godot\mono\temp\obj\Debug\NotesEscapeRoom.pdb
+C:\Users\anggr\OneDrive\Documents\Godot\NotesEscapeRoom\notesescaperoom\.godot\mono\temp\obj\Debug\NotesEscapeRoom.genruntimeconfig.cache
+C:\Users\anggr\OneDrive\Documents\Godot\NotesEscapeRoom\notesescaperoom\.godot\mono\temp\obj\Debug\ref\NotesEscapeRoom.dll

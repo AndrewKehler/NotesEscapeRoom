@@ -1,0 +1,50 @@
+[gd_scene load_steps=2 format=3 uid="uid://6jqu5o0ocwyx"]
+
+[ext_resource type="PackedScene" uid="uid://cbt3kyb36bdjv" path="res://Models/BookshelfSmall.glb" id="1_5rwre"]
+
+[node name="BookshelfSmall" instance=ExtResource("1_5rwre")]
+
+[node name="Sshelf" parent="." index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0716238, 1.25442, -0.0144708)
+
+[node name="Spot_003" parent="Sshelf" index="6"]
+transform = Transform3D(1, 0, 0, 0, 0.127527, 0.991835, 0, -0.991835, 0.127527, 0.270021, 0.0538255, 0.148389)
+light_energy = 3.232
+spot_range = 0.630561
+spot_angle = 25.3405
+
+[node name="Spot_004" type="SpotLight3D" parent="Sshelf" index="7"]
+transform = Transform3D(1, 0, 0, 0, 0.127527, 0.991835, 0, -0.991835, 0.127527, -0.29294, 0.0538255, 0.148389)
+light_color = Color(1, 0.825552, 0.643357, 1)
+light_energy = 3.232
+spot_range = 0.630561
+spot_angle = 25.3405
+spot_angle_attenuation = 0.1
+
+[node name="Spot_005" type="SpotLight3D" parent="Sshelf" index="8"]
+transform = Transform3D(1, 0, 0, 0, 0.127527, 0.991835, 0, -0.991835, 0.127527, 0.283818, 1.14967, 0.154218)
+light_color = Color(1, 0.825552, 0.643357, 1)
+light_energy = 3.232
+spot_range = 0.630561
+spot_angle = 25.3405
+spot_angle_attenuation = 0.1
+
+[node name="Spot_006" type="SpotLight3D" parent="Sshelf" index="9"]
+transform = Transform3D(1, 0, 0, 0, 0.127527, 0.991835, 0, -0.991835, 0.127527, -0.275754, 1.16237, 0.19445)
+light_color = Color(1, 0.825552, 0.643357, 1)
+light_energy = 3.232
+spot_range = 0.630561
+spot_angle = 25.3405
+spot_angle_attenuation = 0.1
+
+[node name="Shelflight_1" parent="." index="1"]
+transform = Transform3D(0.0303883, 0, 0, 0, 0.00620658, 0, 0, 0, 0.0303883, 0.20889, 2.43531, 0.124706)
+
+[node name="Shelflight_2" parent="." index="2"]
+transform = Transform3D(0.0303883, 0, 0, 0, 0.00620658, 0, 0, 0, 0.0303883, -0.372203, 2.43531, 0.124706)
+
+[node name="Shelflight_003" parent="." index="3"]
+transform = Transform3D(0.0303883, 0, 0, 0, 0.00620658, 0, 0, 0, 0.0303883, 0.20889, 1.32478, 0.124706)
+
+[node name="Shelflight_004" parent="." index="4"]
+transform = Transform3D(0.0303883, 0, 0, 0, 0.00620658, 0, 0, 0, 0.0303883, -0.360271, 1.32478, 0.124706)

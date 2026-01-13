@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://cj4sayenk2noo"]
+
+[ext_resource type="PackedScene" uid="uid://3g3bvo6gydgr" path="res://Models/FancyLamp.glb" id="1_b6h03"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_n3y0b"]
+emission_enabled = true
+emission = Color(1, 1, 1, 1)
+emission_energy_multiplier = 0.72
+
+[node name="FancyLamp" instance=ExtResource("1_b6h03")]
+
+[node name="Lamp" parent="." index="0"]
+gi_lightmap_texel_scale = 1.018
+surface_material_override/0 = SubResource("StandardMaterial3D_n3y0b")

@@ -1,0 +1,22 @@
+[gd_scene load_steps=2 format=3 uid="uid://dcsxmh2aoa0at"]
+
+[ext_resource type="PackedScene" uid="uid://cyyw7pxpdnbwr" path="res://Models/WallLights.glb" id="1_uxece"]
+
+[node name="WallLights" instance=ExtResource("1_uxece")]
+
+[node name="Point_005" parent="WallLight_001" index="0"]
+light_energy = 0.5
+light_indirect_energy = 0.0
+
+[node name="Point_006" parent="WallLight_002" index="0"]
+light_energy = 0.5
+light_indirect_energy = 0.0
+
+[node name="Point_008" parent="WallLight_003" index="0"]
+transform = Transform3D(0, -0.826019, 0, 0, 0, 0.803383, -0.988705, 0, 0, 0.00863615, 0.11526, 0.122555)
+light_energy = 0.5
+light_indirect_energy = 0.0
+
+[node name="Point_009" parent="WallLight_004" index="0"]
+light_energy = 0.5
+light_indirect_energy = 0.0

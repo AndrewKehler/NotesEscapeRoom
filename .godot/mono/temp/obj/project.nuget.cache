@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "B9ZNaim7Eao=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\anggr\\OneDrive\\Documents\\Godot\\NotesEscapeRoom\\notesescaperoom\\NotesEscapeRoom.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\anggr\\.nuget\\packages\\godot.sourcegenerators\\4.4.1\\godot.sourcegenerators.4.4.1.nupkg.sha512",
+    "C:\\Users\\anggr\\.nuget\\packages\\godotsharp\\4.4.1\\godotsharp.4.4.1.nupkg.sha512",
+    "C:\\Users\\anggr\\.nuget\\packages\\godotsharpeditor\\4.4.1\\godotsharpeditor.4.4.1.nupkg.sha512"
+  ],
+  "logs": []
+}

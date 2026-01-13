@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://bx533oi21pnc"]
+
+[ext_resource type="PackedScene" uid="uid://blypfh2ns6me6" path="res://Models/TVSDoorL.glb" id="1_2uls1"]
+
+[node name="TVSDoorL" instance=ExtResource("1_2uls1")]
+
+[node name="DoorL" parent="." index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.246996, 0.527048, 0.00151761)
+
+[node name="knob" parent="DoorL" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.225, 0, 0.013)

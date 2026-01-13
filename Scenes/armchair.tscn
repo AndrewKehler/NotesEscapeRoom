@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://cc1cf30uwsfwa"]
+
+[ext_resource type="PackedScene" uid="uid://dqr7dowdiogv8" path="res://Models/Armchair.glb" id="1_a3def"]
+
+[node name="Armchair2" instance=ExtResource("1_a3def")]

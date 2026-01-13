@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://dep4bjih13bds"]
+
+[ext_resource type="PackedScene" uid="uid://c0hwi24mpcfp6" path="res://Models/PorcelainLamp.glb" id="1_lx0ev"]
+
+[node name="PorcelainLamp2" instance=ExtResource("1_lx0ev")]
+
+[node name="Spot" parent="PorcelainLamp/head" index="0"]
+light_energy = 6.848
+spot_range = 1.846
+
+[node name="OmniLight3D" type="OmniLight3D" parent="PorcelainLamp/head" index="1"]
+transform = Transform3D(0.675681, 0.302753, -0.672158, 0.482419, 0.507852, 0.713693, 0.55743, -0.80649, 0.197092, 0.0461545, -0.0505252, -0.00744987)
+light_color = Color(0.884126, 0.763688, 0.655718, 1)
+light_energy = 0.1
+light_indirect_energy = 0.0
+omni_range = 0.112108
+omni_attenuation = 1.606

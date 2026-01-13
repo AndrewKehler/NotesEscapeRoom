@@ -1,0 +1,68 @@
+[gd_scene load_steps=8 format=3 uid="uid://dpvihhxdo2oro"]
+
+[ext_resource type="Texture2D" uid="uid://bigcnjhvas3xr" path="res://Sprites/matchBox.png" id="1_hnjia"]
+[ext_resource type="Script" uid="uid://drtmuydu4ibdg" path="res://Scripts/AreaChangeInsp.cs" id="2_qr2hg"]
+[ext_resource type="Texture2D" uid="uid://bpta0ve0ylvcd" path="res://Sprites/matchBox2.png" id="3_0veym"]
+[ext_resource type="Script" uid="uid://cnusnlaxiowu4" path="res://Scripts/AreaItmInsp.cs" id="4_mpf3v"]
+[ext_resource type="Texture2D" uid="uid://bxy3hvnmlhvtk" path="res://Sprites/matchStickLit.png" id="5_0veym"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1oau6"]
+size = Vector2(268.335, 25.7801)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_my77w"]
+size = Vector2(273.423, 71.2641)
+
+[node name="matchBoxInspection" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+
+[node name="Main" type="TextureRect" parent="."]
+custom_minimum_size = Vector2(400, 400)
+layout_mode = 0
+offset_left = 7.0
+offset_top = -13.0
+offset_right = 407.0
+offset_bottom = 387.0
+texture = ExtResource("1_hnjia")
+expand_mode = 1
+
+[node name="AChangeView" type="Area2D" parent="Main"]
+script = ExtResource("2_qr2hg")
+stepPath = NodePath("../../Step2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Main/AChangeView"]
+position = Vector2(290.515, 236.199)
+rotation = -0.963679
+scale = Vector2(1, 0.999999)
+skew = 0.965167
+shape = SubResource("RectangleShape2D_1oau6")
+
+[node name="Step2" type="TextureRect" parent="."]
+visible = false
+custom_minimum_size = Vector2(400, 400)
+layout_mode = 0
+offset_left = 14.0
+offset_top = -26.0
+offset_right = 414.0
+offset_bottom = 374.0
+texture = ExtResource("3_0veym")
+expand_mode = 1
+
+[node name="AItemInteract" type="Area2D" parent="Step2"]
+script = ExtResource("4_mpf3v")
+neededItemID = "matchStick"
+newItemId = "matchStickLit"
+newTexture = ExtResource("5_0veym")
+removeOld = true
+removeSelected = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Step2/AItemInteract"]
+position = Vector2(252.486, 243.227)
+rotation = -0.181528
+skew = 0.200713
+shape = SubResource("RectangleShape2D_my77w")

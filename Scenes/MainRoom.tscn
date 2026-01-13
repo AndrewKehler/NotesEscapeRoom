@@ -1,0 +1,890 @@
+[gd_scene load_steps=63 format=3 uid="uid://bprs0m3p124ew"]
+
+[ext_resource type="PackedScene" uid="uid://bro8cnxpfx1l8" path="res://Models/trim.glb" id="1_ydffh"]
+[ext_resource type="PackedScene" uid="uid://exqbbg8awp2q" path="res://Models/walls.glb" id="2_uo5d6"]
+[ext_resource type="PackedScene" uid="uid://y2ciiri4cg0n" path="res://Scenes/Door.tscn" id="3_5msjq"]
+[ext_resource type="Script" uid="uid://cliuyka1nmc6o" path="res://Scenes/Test.cs" id="4_0obo3"]
+[ext_resource type="PackedScene" uid="uid://c5pfrrc75vgh0" path="res://Models/floor.glb" id="4_r8wu7"]
+[ext_resource type="PackedScene" uid="uid://drdlxieltsba6" path="res://Models/Blinds.glb" id="5_uo5d6"]
+[ext_resource type="PackedScene" uid="uid://6jqu5o0ocwyx" path="res://Scenes/bookshelf_small.tscn" id="6_5msjq"]
+[ext_resource type="PackedScene" uid="uid://dwnuin4dffmi1" path="res://Models/BookshelfLarge.glb" id="7_3wwy1"]
+[ext_resource type="PackedScene" uid="uid://3j62x0fknjb7" path="res://Models/Couch.glb" id="8_bplf3"]
+[ext_resource type="PackedScene" uid="uid://dg1wj2u230u18" path="res://Models/Carpet.glb" id="9_oe2b4"]
+[ext_resource type="PackedScene" uid="uid://bxrh7sg8hok5w" path="res://Scenes/BookOrange.tscn" id="10_tj8xa"]
+[ext_resource type="Texture2D" uid="uid://vot4wa7fidij" path="res://Sprites/BookOrange.png" id="11_q6vta"]
+[ext_resource type="Script" uid="uid://c8p8lmflk5lmx" path="res://Scripts/AreaItemBook.cs" id="11_yia4c"]
+[ext_resource type="PackedScene" uid="uid://m3xkx2qqiin4" path="res://Models/Monstera.glb" id="12_vucii"]
+[ext_resource type="PackedScene" uid="uid://dixbd0dyh48kx" path="res://Models/AnimalPainting.glb" id="13_1b816"]
+[ext_resource type="PackedScene" uid="uid://ju7gulnaijes" path="res://Models/Gramophone.glb" id="14_6nx3j"]
+[ext_resource type="Texture2D" uid="uid://cgjm8cghlrpfm" path="res://Sprites/BookPink.png" id="14_8b2x4"]
+[ext_resource type="PackedScene" uid="uid://dlhtikijxrpwr" path="res://Scenes/BookPink.tscn" id="14_odo7u"]
+[ext_resource type="PackedScene" uid="uid://bjnx2lxnuuqq" path="res://Models/BirdOfParadise.glb" id="15_tkd15"]
+[ext_resource type="PackedScene" uid="uid://dcsxmh2aoa0at" path="res://Scenes/wall_lights.tscn" id="16_wlaoh"]
+[ext_resource type="PackedScene" uid="uid://dgw683kp34vl0" path="res://Scenes/throw_pillow.tscn" id="17_cyf6o"]
+[ext_resource type="PackedScene" uid="uid://cc1cf30uwsfwa" path="res://Scenes/armchair.tscn" id="17_vucii"]
+[ext_resource type="PackedScene" uid="uid://dtxrtst2seojj" path="res://Scenes/piano.tscn" id="18_vucii"]
+[ext_resource type="PackedScene" uid="uid://dep4bjih13bds" path="res://Scenes/porcelain_lamp.tscn" id="19_1b816"]
+[ext_resource type="Script" uid="uid://csgaxkk2qk7u1" path="res://Scripts/AreaInteraction.cs" id="19_1fl1y"]
+[ext_resource type="PackedScene" uid="uid://cj4sayenk2noo" path="res://Scenes/fancy_lamp.tscn" id="19_6nx3j"]
+[ext_resource type="Script" uid="uid://pifhuqs0e3ew" path="res://Scripts/AreaLocation.cs" id="19_p87fh"]
+[ext_resource type="PackedScene" uid="uid://bmix6sjka17vl" path="res://Models/HangingLight.glb" id="20_6nx3j"]
+[ext_resource type="PackedScene" uid="uid://cjr1r5agxdjyo" path="res://Models/Nightstand.glb" id="20_tkd15"]
+[ext_resource type="Script" uid="uid://d1f3sfqc3vwtb" path="res://Scripts/AreaItem.cs" id="21_sp2ca"]
+[ext_resource type="Texture2D" uid="uid://dpl4srjtwxr05" path="res://Sprites/matchStick.png" id="22_a06rh"]
+[ext_resource type="PackedScene" uid="uid://ctoi0ky4avk4i" path="res://Models/Rug.glb" id="22_wlaoh"]
+[ext_resource type="PackedScene" uid="uid://c76e2rg281vj7" path="res://Models/FalseWindow.glb" id="23_l5afe"]
+[ext_resource type="PackedScene" uid="uid://dima3v25jsfrl" path="res://Models/Calathea.glb" id="24_jlw0r"]
+[ext_resource type="Texture2D" uid="uid://dpifs8vhsdoaw" path="res://Sprites/Button.png" id="26_5gma4"]
+[ext_resource type="Script" uid="uid://bwbmsr26yj7q5" path="res://Scripts/UIButton.cs" id="26_8fu6k"]
+[ext_resource type="Script" uid="uid://dklrdbhy1ohn6" path="res://Scripts/SignalMaster.cs" id="26_cyf6o"]
+[ext_resource type="PackedScene" uid="uid://co60261wk5jva" path="res://Models/TVStand.glb" id="28_3nixr"]
+[ext_resource type="PackedScene" uid="uid://vqlviomf823e" path="res://Scenes/tvs_door_l.tscn" id="29_w81r2"]
+[ext_resource type="PackedScene" uid="uid://bt6wyjxtxejvb" path="res://Scenes/matchStick.tscn" id="30_ab07i"]
+[ext_resource type="PackedScene" uid="uid://bx533oi21pnc" path="res://Scenes/tvs_door_R.tscn" id="30_v5u8i"]
+[ext_resource type="PackedScene" uid="uid://btyaedjbxnxd3" path="res://Scenes/tvs_drawer.tscn" id="31_tj8xa"]
+[ext_resource type="Texture2D" uid="uid://bigcnjhvas3xr" path="res://Sprites/matchBox.png" id="32_v5u8i"]
+[ext_resource type="Script" uid="uid://c4wkpm2qrovfs" path="res://Scripts/InspectContainer.cs" id="35_gu1q4"]
+[ext_resource type="PackedScene" uid="uid://nr6y1tqm228u" path="res://Scenes/matchBox.tscn" id="35_q6vta"]
+[ext_resource type="Script" uid="uid://co27j0uhe2bfq" path="res://Scripts/InventoryPanel.cs" id="35_trn1o"]
+[ext_resource type="Texture2D" uid="uid://dd0g6lby2vqxd" path="res://Sprites/Exit.png" id="36_0e6q6"]
+[ext_resource type="Texture2D" uid="uid://c10a1malruhbj" path="res://Sprites/inspect.svg" id="36_dcn4d"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_5gma4"]
+size = Vector3(0.118164, 2.34845, 0.975098)
+
+[sub_resource type="BoxMesh" id="BoxMesh_l5afe"]
+size = Vector3(3.76, 0.03, 4.24)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_q8luu"]
+size = Vector3(0.229851, 3.10046, 1.7047)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_yia4c"]
+size = Vector3(0.140625, 0.161085, 0.0589981)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ab07i"]
+size = Vector3(0.765808, 1.07178, 1.04297)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_sp2ca"]
+size = Vector3(0.375183, 0.325439, 0.388641)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_a06rh"]
+size = Vector3(0.0908003, 0.0191574, 0.0229645)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_q6vta"]
+size = Vector3(1.61133, 1.03637, 1.005)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_v5u8i"]
+size = Vector3(0.579842, 0.214111, 0.0645142)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_w81r2"]
+size = Vector3(0.5401, 0.177719, 0.319672)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_tj8xa"]
+size = Vector3(0.0476761, 0.0189629, 0.0769501)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_odo7u"]
+size = Vector3(0.593262, 0.213287, 0.0301514)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_8b2x4"]
+size = Vector3(1.60199, 0.0088501, 0.358932)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_itkp5"]
+bg_color = Color(0.481789, 0.48179, 0.481789, 1)
+border_width_left = 65
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color(0.321728, 0.321728, 0.321728, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[node name="Node3D" type="Node3D"]
+script = ExtResource("26_cyf6o")
+CameraPath = NodePath("UI/Contents/Margin/HBoxContainer/MarginContainer/SubViewportContainer/SubViewport/Camera3D")
+ButtonLPath = NodePath("UI/Contents/Margin/HBoxContainer/MarginContainer/MainButtonContainer/ButtonL")
+ButtonRPath = NodePath("UI/Contents/Margin/HBoxContainer/MarginContainer/MainButtonContainer/ButtonR")
+ButtonDPath = NodePath("UI/Contents/Margin/HBoxContainer/MarginContainer/MainButtonContainer/ButtonD")
+
+[node name="Structure" type="Node3D" parent="."]
+
+[node name="trim" parent="Structure" instance=ExtResource("1_ydffh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -1)
+
+[node name="walls" parent="Structure" instance=ExtResource("2_uo5d6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -1)
+
+[node name="Door" parent="Structure" instance=ExtResource("3_5msjq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.967439, -1.75513, 0, 0.0205382)
+
+[node name="Area3D" type="Area3D" parent="Structure/Door"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.479249, 1.3477, 0)
+script = ExtResource("4_0obo3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Structure/Door/Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.310617, -0.447052, -0.440186)
+shape = SubResource("BoxShape3D_5gma4")
+
+[node name="floor" parent="Structure" instance=ExtResource("4_r8wu7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -1)
+
+[node name="Blinds" parent="Structure" instance=ExtResource("5_uo5d6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -1)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Structure"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.154535, 3.03524, 0.105593)
+mesh = SubResource("BoxMesh_l5afe")
+
+[node name="Furniture" type="Node3D" parent="."]
+
+[node name="BookshelfSmall" parent="Furniture" instance=ExtResource("6_5msjq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -2)
+
+[node name="AreaBkShlfL" type="Area3D" parent="Furniture"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -1)
+script = ExtResource("19_p87fh")
+visibleOn = "2"
+cameraPChange = Vector3(0.5, 1.725, -0.099)
+cameraRChange = Vector3(-0.314, -1.571, 0)
+changeFOV = true
+fovChange = 46.6
+locationID = "BookshelfL"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Furniture/AreaBkShlfL"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.875576, 1.05023, 0.877159)
+shape = SubResource("BoxShape3D_q8luu")
+
+[node name="BookshelfLarge" parent="Furniture/AreaBkShlfL" instance=ExtResource("7_3wwy1")]
+
+[node name="BookPuzzle" type="Node3D" parent="Furniture/AreaBkShlfL/BookshelfLarge"]
+
+[node name="Slot1" type="Node3D" parent="Furniture/AreaBkShlfL/BookshelfLarge/BookPuzzle"]
+
+[node name="ASlot1" type="Area3D" parent="Furniture/AreaBkShlfL/BookshelfLarge/BookPuzzle/Slot1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.927903, 1.44837, 0.107281)
+script = ExtResource("11_yia4c")
+ItemID = "BookOrange"
+Texture = ExtResource("11_q6vta")
+visibleOn = "BookshelfL"
+isInstancer = true
+allowInstance = PackedStringArray("BookOrange", "BookPink")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Furniture/AreaBkShlfL/BookshelfLarge/BookPuzzle/Slot1/ASlot1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0777602, 0)
+shape = SubResource("BoxShape3D_yia4c")
+
+[node name="BookOrange" parent="Furniture/AreaBkShlfL/BookshelfLarge/BookPuzzle/Slot1/ASlot1" instance=ExtResource("10_tj8xa")]
+visible = false
+
+[node name="Slot2" type="Node3D" parent="Furniture/AreaBkShlfL/BookshelfLarge/BookPuzzle"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.06)
+
+[node name="ASlot2" type="Area3D" parent="Furniture/AreaBkShlfL/BookshelfLarge/BookPuzzle/Slot2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.927903, 1.44837, 0.132236)
+script = ExtResource("11_yia4c")
+ItemID = "BookPink"
+Texture = ExtResource("14_8b2x4")
+visibleOn = "BookshelfL"
+isInstancer = true
+allowInstance = PackedStringArray("BookOrange", "BookPink")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Furniture/AreaBkShlfL/BookshelfLarge/BookPuzzle/Slot2/ASlot2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0767984, 0)
+shape = SubResource("BoxShape3D_yia4c")
+
+[node name="BookPink2" parent="Furniture/AreaBkShlfL/BookshelfLarge/BookPuzzle/Slot2/ASlot2" instance=ExtResource("14_odo7u")]
+visible = false
+
+[node name="Couch" parent="Furniture" instance=ExtResource("8_bplf3")]
+transform = Transform3D(0.613851, 0, 0, 0, 1, 0, 0, 0, 1, 1.32615, 0, -1)
+
+[node name="Carpet" parent="Furniture" instance=ExtResource("9_oe2b4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.29733, 0, -1)
+
+[node name="Monstera2" parent="Furniture" instance=ExtResource("12_vucii")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -1)
+
+[node name="AnimalPainting" parent="Furniture" instance=ExtResource("13_1b816")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -1)
+
+[node name="Gramophone" parent="Furniture" instance=ExtResource("14_6nx3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -1)
+
+[node name="BirdOfParadise" parent="Furniture" instance=ExtResource("15_tkd15")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -1)
+
+[node name="LAarmChair" type="Area3D" parent="Furniture"]
+transform = Transform3D(0.636024, 0, -0.771669, 0, 1, 0, 0.771669, 0, 0.636024, -1.22487, 0.641014, 1.46878)
+script = ExtResource("19_p87fh")
+visibleOn = "3"
+cameraPChange = Vector3(-0.406, 1, 0.922)
+cameraRChange = Vector3(-0.314159, 2.19911, 0)
+changeFOV = true
+fovChange = 55.7
+locationID = "armChair"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Furniture/LAarmChair"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0231627, 0.0358891, -0.0214845)
+shape = SubResource("BoxShape3D_ab07i")
+
+[node name="Armchair" parent="Furniture/LAarmChair" instance=ExtResource("17_vucii")]
+transform = Transform3D(0.636024, 0, 0.771669, 0, 1, 0, -0.771669, 0, 0.636024, -0.49001, -0.641014, -3.28707)
+
+[node name="AThrowPillow" type="Area3D" parent="Furniture/LAarmChair/Armchair"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.27673, 0.553442, 2.46942)
+script = ExtResource("19_1fl1y")
+VisibleOn = "armChair"
+MoveTo = Vector3(-2.277, 0.904, 2.469)
+RotateTo = Vector3(0.136415, 0.286074, 0.643381)
+ReverseOnLeave = true
+OgPos = Vector3(-2.27673, 0.553442, 2.46942)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Furniture/LAarmChair/Armchair/AThrowPillow"]
+transform = Transform3D(0.932595, 0, 0.360925, 0, 1, 0, -0.360925, 0, 0.932595, -0.118068, 0.0926514, -0.00336325)
+shape = SubResource("BoxShape3D_sp2ca")
+
+[node name="throwPillow" parent="Furniture/LAarmChair/Armchair/AThrowPillow" instance=ExtResource("17_cyf6o")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0302176, -0.553442, -0.0210125)
+
+[node name="AMatch" type="Area3D" parent="Furniture/LAarmChair/Armchair"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.36473, 0.47333, 2.38666)
+disable_mode = 1
+script = ExtResource("21_sp2ca")
+ItemID = "matchStick"
+Texture = ExtResource("22_a06rh")
+visibleOn = "armChair"
+allowInstance = PackedStringArray("matchStick")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Furniture/LAarmChair/Armchair/AMatch"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0341897, 0.00104141, 0)
+shape = SubResource("BoxShape3D_a06rh")
+
+[node name="matchStick" parent="Furniture/LAarmChair/Armchair/AMatch" instance=ExtResource("30_ab07i")]
+visible = false
+
+[node name="Piano" parent="Furniture" instance=ExtResource("18_vucii")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -1)
+
+[node name="PorcelainLamp2" parent="Furniture" instance=ExtResource("19_1b816")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -1)
+
+[node name="WallLights" parent="Furniture" instance=ExtResource("16_wlaoh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -1)
+
+[node name="FancyLamp" parent="Furniture" instance=ExtResource("19_6nx3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -1)
+
+[node name="SpotLight3D" type="SpotLight3D" parent="Furniture/FancyLamp"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0.152485, 1.51898, -0.121781)
+light_color = Color(0.93623, 0.826681, 0.774566, 1)
+light_energy = 2.616
+spot_range = 2.347
+spot_attenuation = 4.03
+spot_angle = 45.8739
+
+[node name="SpotLight3D2" type="SpotLight3D" parent="Furniture/FancyLamp"]
+transform = Transform3D(1, -0.000165282, -3.4668e-05, -3.47083e-05, -0.00024382, -1, 0.000165274, 1, -0.000243826, 0.156693, 1.18903, -0.134107)
+light_color = Color(0.892569, 0.744962, 0.664621, 1)
+light_energy = 2.616
+spot_range = 1.78467
+spot_angle = 66.3967
+
+[node name="Nightstand2" parent="Furniture" instance=ExtResource("20_tkd15")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -1)
+
+[node name="TVSArea" type="Area3D" parent="Furniture"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -1)
+script = ExtResource("19_p87fh")
+visibleOn = "1"
+cameraPChange = Vector3(0.342, 1.139, -0.922)
+cameraRChange = Vector3(-0.31875, 1.12235e-14, -3.51721e-15)
+locationID = "standArea"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Furniture/TVSArea"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.651176, 0.540096, -0.926204)
+shape = SubResource("BoxShape3D_q6vta")
+
+[node name="TVStand" parent="Furniture/TVSArea" instance=ExtResource("28_3nixr")]
+
+[node name="TVSDoorL" parent="Furniture/TVSArea/TVStand" instance=ExtResource("29_w81r2")]
+transform = Transform3D(0.999885, 0, -0.0151839, 0, 1, 0, 0.0151839, 0, 0.999885, -1.44931, 0, -0.615841)
+
+[node name="TVSDoorR" parent="Furniture/TVSArea/TVStand" instance=ExtResource("30_v5u8i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.347641, 0, -0.610855)
+
+[node name="TVSDrawer3" parent="Furniture/TVSArea/TVStand" instance=ExtResource("31_tj8xa")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.644813, -0.472782, -1)
+
+[node name="Drawer1" type="Area3D" parent="Furniture/TVSArea/TVStand"]
+script = ExtResource("19_1fl1y")
+VisibleOn = "standArea"
+MoveTo = Vector3(0, 0, 0.232765)
+ReverseOnClick = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Furniture/TVSArea/TVStand/Drawer1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.642038, 0.759945, -0.618426)
+shape = SubResource("BoxShape3D_v5u8i")
+
+[node name="DrawerLocation" type="Area3D" parent="Furniture/TVSArea/TVStand/Drawer1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.644813, 0, -1)
+script = ExtResource("19_p87fh")
+visibleOn = "standArea"
+cameraPChange = Vector3(0.342, 1.139, -1.372)
+cameraRChange = Vector3(-1.06989, 0, 0)
+locationID = "drawerOne"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Furniture/TVSArea/TVStand/Drawer1/DrawerLocation"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0134583, 0.763787, 0.215561)
+shape = SubResource("BoxShape3D_w81r2")
+
+[node name="TVSDrawer1" parent="Furniture/TVSArea/TVStand/Drawer1/DrawerLocation" instance=ExtResource("31_tj8xa")]
+
+[node name="AMatchBox" type="Area3D" parent="Furniture/TVSArea/TVStand/Drawer1/DrawerLocation/TVSDrawer1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.163784, 0.694788, 0.1289)
+disable_mode = 1
+script = ExtResource("21_sp2ca")
+ItemID = "matchBox"
+Texture = ExtResource("32_v5u8i")
+visibleOn = "drawerOne"
+hasScene = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Furniture/TVSArea/TVStand/Drawer1/DrawerLocation/TVSDrawer1/AMatchBox"]
+transform = Transform3D(0.724665, 0, -0.689101, 0, 1, 0, 0.689101, 0, 0.724665, 0, 0, 0)
+shape = SubResource("BoxShape3D_tj8xa")
+
+[node name="matchBox" parent="Furniture/TVSArea/TVStand/Drawer1/DrawerLocation/TVSDrawer1/AMatchBox" instance=ExtResource("35_q6vta")]
+visible = false
+
+[node name="Drawer2" type="Area3D" parent="Furniture/TVSArea/TVStand"]
+script = ExtResource("19_1fl1y")
+VisibleOn = "standArea"
+MoveTo = Vector3(0, 0, 0.23)
+ReverseOnClick = true
+
+[node name="TVSDrawer4" parent="Furniture/TVSArea/TVStand/Drawer2" instance=ExtResource("31_tj8xa")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.644813, -0.241412, -1)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Furniture/TVSArea/TVStand/Drawer2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.645748, 0.530298, -0.608635)
+shape = SubResource("BoxShape3D_odo7u")
+
+[node name="Countertop" type="Area3D" parent="Furniture/TVSArea/TVStand"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.547496, 0.681355, -0.970369)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Furniture/TVSArea/TVStand/Countertop"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0999451, 0.213365, 0.187904)
+shape = SubResource("BoxShape3D_8b2x4")
+
+[node name="HangingLight2" parent="." instance=ExtResource("20_6nx3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -1)
+
+[node name="SpotLight3D" type="SpotLight3D" parent="HangingLight2"]
+transform = Transform3D(1, 0, 0, 0, -2.98023e-08, 1, 0, -1, -2.98023e-08, -0.601558, 2.2552, -0.725844)
+light_color = Color(0.943734, 0.847385, 0.799009, 1)
+light_energy = 5.364
+light_volumetric_fog_energy = 8.111
+spot_range = 1.79005
+spot_angle = 27.86
+spot_angle_attenuation = 0.153893
+
+[node name="Rug" parent="." instance=ExtResource("22_wlaoh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -1)
+
+[node name="FalseWindow" parent="." instance=ExtResource("23_l5afe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -1)
+
+[node name="Calathea" parent="." instance=ExtResource("24_jlw0r")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -1)
+
+[node name="UI" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+
+[node name="Contents" type="MarginContainer" parent="UI"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -24.0
+offset_bottom = 25.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="UI/Contents"]
+layout_mode = 2
+mouse_filter = 1
+color = Color(0.299547, 0.299547, 0.299547, 1)
+
+[node name="Margin" type="MarginContainer" parent="UI/Contents"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="HBoxContainer" type="HBoxContainer" parent="UI/Contents/Margin"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="MarginContainer" type="MarginContainer" parent="UI/Contents/Margin/HBoxContainer"]
+layout_mode = 2
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="UI/Contents/Margin/HBoxContainer/MarginContainer"]
+clip_contents = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 4.9
+
+[node name="SubViewport" type="SubViewport" parent="UI/Contents/Margin/HBoxContainer/MarginContainer/SubViewportContainer"]
+handle_input_locally = false
+physics_object_picking = true
+size = Vector2i(927, 597)
+render_target_update_mode = 4
+
+[node name="Camera3D" type="Camera3D" parent="UI/Contents/Margin/HBoxContainer/MarginContainer/SubViewportContainer/SubViewport"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.124, 1.33, 0.069)
+fov = 85.4
+size = 1.93823
+
+[node name="MainButtonContainer" type="HBoxContainer" parent="UI/Contents/Margin/HBoxContainer/MarginContainer"]
+clip_contents = true
+custom_minimum_size = Vector2(900, 75)
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/separation = 387
+alignment = 1
+
+[node name="ButtonL" type="Button" parent="UI/Contents/Margin/HBoxContainer/MarginContainer/MainButtonContainer"]
+custom_minimum_size = Vector2(29, 74)
+layout_mode = 2
+size_flags_vertical = 4
+flat = true
+icon_alignment = 1
+expand_icon = true
+script = ExtResource("26_8fu6k")
+TexturePath = NodePath("TextureRect")
+VisibleIn = PackedStringArray("0", "1", "2", "3")
+
+[node name="TextureRect" type="TextureRect" parent="UI/Contents/Margin/HBoxContainer/MarginContainer/MainButtonContainer/ButtonL"]
+layout_mode = 0
+offset_right = 29.0
+offset_bottom = 74.0
+texture = ExtResource("26_5gma4")
+expand_mode = 1
+flip_h = true
+
+[node name="ButtonD" type="Button" parent="UI/Contents/Margin/HBoxContainer/MarginContainer/MainButtonContainer"]
+custom_minimum_size = Vector2(74, 40)
+layout_mode = 2
+size_flags_vertical = 8
+flat = true
+icon_alignment = 1
+expand_icon = true
+script = ExtResource("26_8fu6k")
+TexturePath = NodePath("TextureRect")
+VisibleIn = PackedStringArray("armChair", "standArea", "drawerOne", "BookshelfL")
+
+[node name="TextureRect" type="TextureRect" parent="UI/Contents/Margin/HBoxContainer/MarginContainer/MainButtonContainer/ButtonD"]
+layout_mode = 0
+offset_left = 73.5
+offset_right = 102.5
+offset_bottom = 74.0
+rotation = 1.57079
+texture = ExtResource("26_5gma4")
+expand_mode = 1
+
+[node name="ButtonR" type="Button" parent="UI/Contents/Margin/HBoxContainer/MarginContainer/MainButtonContainer"]
+custom_minimum_size = Vector2(29, 74)
+layout_mode = 2
+size_flags_vertical = 4
+flat = true
+icon_alignment = 1
+expand_icon = true
+script = ExtResource("26_8fu6k")
+TexturePath = NodePath("TextureRect")
+VisibleIn = PackedStringArray("0", "1", "2", "3")
+
+[node name="TextureRect" type="TextureRect" parent="UI/Contents/Margin/HBoxContainer/MarginContainer/MainButtonContainer/ButtonR"]
+layout_mode = 0
+offset_right = 29.0
+offset_bottom = 74.0
+texture = ExtResource("26_5gma4")
+expand_mode = 1
+
+[node name="InspectContainer" type="CenterContainer" parent="UI/Contents/Margin/HBoxContainer/MarginContainer"]
+visible = false
+layout_mode = 2
+script = ExtResource("35_gu1q4")
+
+[node name="Panel" type="Panel" parent="UI/Contents/Margin/HBoxContainer/MarginContainer/InspectContainer"]
+custom_minimum_size = Vector2(500, 400)
+layout_mode = 2
+mouse_filter = 1
+theme_override_styles/panel = SubResource("StyleBoxFlat_itkp5")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="UI/Contents/Margin/HBoxContainer/MarginContainer/InspectContainer/Panel"]
+layout_mode = 2
+offset_left = 15.0
+offset_top = 12.0
+offset_right = 490.0
+offset_bottom = 388.0
+theme_override_constants/separation = 30
+
+[node name="Button" type="Button" parent="UI/Contents/Margin/HBoxContainer/MarginContainer/InspectContainer/Panel/HBoxContainer"]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+size_flags_vertical = 0
+flat = true
+
+[node name="TextureRect" type="TextureRect" parent="UI/Contents/Margin/HBoxContainer/MarginContainer/InspectContainer/Panel/HBoxContainer/Button"]
+layout_mode = 0
+offset_right = 30.0
+offset_bottom = 30.0
+texture = ExtResource("36_0e6q6")
+expand_mode = 1
+
+[node name="ScenelessInspection" type="TextureRect" parent="UI/Contents/Margin/HBoxContainer/MarginContainer/InspectContainer/Panel/HBoxContainer"]
+custom_minimum_size = Vector2(400, 0)
+layout_mode = 2
+texture = ExtResource("22_a06rh")
+expand_mode = 1
+
+[node name="UIContainer" type="MarginContainer" parent="UI/Contents/Margin/HBoxContainer"]
+custom_minimum_size = Vector2(200, 600)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="ColorRect" type="ColorRect" parent="UI/Contents/Margin/HBoxContainer/UIContainer"]
+layout_mode = 2
+color = Color(0.298039, 0.298039, 0.298039, 1)
+
+[node name="ButtonContainer" type="VBoxContainer" parent="UI/Contents/Margin/HBoxContainer/UIContainer"]
+layout_mode = 2
+
+[node name="InventoryRow1" type="HBoxContainer" parent="UI/Contents/Margin/HBoxContainer/UIContainer/ButtonContainer"]
+layout_mode = 2
+alignment = 2
+
+[node name="Slot1" type="TextureButton" parent="UI/Contents/Margin/HBoxContainer/UIContainer/ButtonContainer/InventoryRow1"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+script = ExtResource("35_trn1o")
+_panelPath = NodePath("Panel")
+_spritePath = NodePath("Panel/Sprite2D")
+_inspectPath = NodePath("Inspect")
+_inspectTexPath = NodePath("Inspect/TextureRect")
+
+[node name="Panel" type="Panel" parent="UI/Contents/Margin/HBoxContainer/UIContainer/ButtonContainer/InventoryRow1/Slot1"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+offset_left = 0.5
+offset_right = 100.5
+offset_bottom = 100.0
+
+[node name="Sprite2D" type="Sprite2D" parent="UI/Contents/Margin/HBoxContainer/UIContainer/ButtonContainer/InventoryRow1/Slot1/Panel"]
+position = Vector2(50, 50)
+scale = Vector2(0.2, 0.2)
+
+[node name="Inspect" type="Button" parent="UI/Contents/Margin/HBoxContainer/UIContainer/ButtonContainer/InventoryRow1/Slot1"]
+layout_mode = 0
+offset_left = 8.5
+offset_top = 76.0
+offset_right = 24.5
+offset_bottom = 92.0
+flat = true
+
+[node name="TextureRect" type="TextureRect" parent="UI/Contents/Margin/HBoxContainer/UIContainer/ButtonContainer/InventoryRow1/Slot1/Inspect"]
+layout_mode = 0
+offset_left = 1.0
+offset_right = 15.975
+offset_bottom = 15.525
+texture = ExtResource("36_dcn4d")
+expand_mode = 1
+flip_h = true
+
+[node name="Slot2" type="TextureButton" parent="UI/Contents/Margin/HBoxContainer/UIContainer/ButtonContainer/InventoryRow1"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+script = ExtResource("35_trn1o")
+_index = 1
+_panelPath = NodePath("Panel")
+_spritePath = NodePath("Panel/Sprite2D")
+_inspectPath = NodePath("Inspect")
+_inspectTexPath = NodePath("Inspect/TextureRect")
+
+[node name="Panel" type="Panel" parent="UI/Contents/Margin/HBoxContainer/UIContainer/ButtonContainer/InventoryRow1/Slot2"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+offset_left = -0.5
+offset_right = 99.5
+offset_bottom = 100.0
+
+[node name="Sprite2D" type="Sprite2D" parent="UI/Contents/Margin/HBoxContainer/UIContainer/ButtonContainer/InventoryRow1/Slot2/Panel"]
+position = Vector2(50, 50)
+scale = Vector2(0.2, 0.2)
+
+[node name="Inspect" type="Button" parent="UI/Contents/Margin/HBoxContainer/UIContainer/ButtonContainer/InventoryRow1/Slot2"]
+layout_mode = 0
+offset_left = 8.5
+offset_top = 76.0
+offset_right = 24.5
+offset_bottom = 92.0
+flat = true
+
+[node name="TextureRect" type="TextureRect" parent="UI/Contents/Margin/HBoxContainer/UIContainer/ButtonContainer/InventoryRow1/Slot2/Inspect"]
+layout_mode = 0
+offset_left = 1.0
+offset_right = 15.975
+offset_bottom = 15.525
+texture = ExtResource("36_dcn4d")
+expand_mode = 1
+flip_h = true
+
+[node name="InventoryRow2" type="HBoxContainer" parent="UI/Contents/Margin/HBoxContainer/UIContainer/ButtonContainer"]
+layout_mode = 2
+alignment = 2
+
+[node name="Slot3" type="TextureButton" parent="UI/Contents/Margin/HBoxContainer/UIContainer/ButtonContainer/InventoryRow2"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+script = ExtResource("35_trn1o")
+_index = 2
+_panelPath = NodePath("Panel")
+_spritePath = NodePath("Panel/Sprite2D")
+_inspectPath = NodePath("Inspect")
+_inspectTexPath = NodePath("Inspect/TextureRect")
+
+[node name="Panel" type="Panel" parent="UI/Contents/Margin/HBoxContainer/UIContainer/ButtonContainer/InventoryRow2/Slot3"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+offset_left = -0.5
+offset_right = 99.5
+offset_bottom = 100.0
+
+[node name="Sprite2D" type="Sprite2D" parent="UI/Contents/Margin/HBoxContainer/UIContainer/ButtonContainer/InventoryRow2/Slot3/Panel"]
+position = Vector2(50, 50)
+scale = Vector2(0.2, 0.2)
+
+[node name="Inspect" type="Button" parent="UI/Contents/Margin/HBoxContainer/UIContainer/ButtonContainer/InventoryRow2/Slot3"]
+layout_mode = 0
+offset_left = 8.5
+offset_top = 76.0
+offset_right = 24.5
+offset_bottom = 92.0
+flat = true
+
+[node name="TextureRect" type="TextureRect" parent="UI/Contents/Margin/HBoxContainer/UIContainer/ButtonContainer/InventoryRow2/Slot3/Inspect"]
+layout_mode = 0
+offset_left = 1.0
+offset_right = 15.975
+offset_bottom = 15.525
+texture = ExtResource("36_dcn4d")
+expand_mode = 1
+flip_h = true
+
+[node name="Slot4" type="TextureButton" parent="UI/Contents/Margin/HBoxContainer/UIContainer/ButtonContainer/InventoryRow2"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+script = ExtResource("35_trn1o")
+_index = 3
+_panelPath = NodePath("Panel")
+_spritePath = NodePath("Panel/Sprite2D")
+_inspectPath = NodePath("Inspect")
+_inspectTexPath = NodePath("Inspect/TextureRect")
+
+[node name="Panel" type="Panel" parent="UI/Contents/Margin/HBoxContainer/UIContainer/ButtonContainer/InventoryRow2/Slot4"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+offset_left = -0.5
+offset_right = 99.5
+offset_bottom = 100.0
+
+[node name="Sprite2D" type="Sprite2D" parent="UI/Contents/Margin/HBoxContainer/UIContainer/ButtonContainer/InventoryRow2/Slot4/Panel"]
+position = Vector2(50, 50)
+scale = Vector2(0.2, 0.2)
+
+[node name="Inspect" type="Button" parent="UI/Contents/Margin/HBoxContainer/UIContainer/ButtonContainer/InventoryRow2/Slot4"]
+layout_mode = 0
+offset_left = 8.5
+offset_top = 76.0
+offset_right = 24.5
+offset_bottom = 92.0
+flat = true
+
+[node name="TextureRect" type="TextureRect" parent="UI/Contents/Margin/HBoxContainer/UIContainer/ButtonContainer/InventoryRow2/Slot4/Inspect"]
+layout_mode = 0
+offset_left = 1.0
+offset_right = 15.975
+offset_bottom = 15.525
+texture = ExtResource("36_dcn4d")
+expand_mode = 1
+flip_h = true
+
+[node name="InventoryRow3" type="HBoxContainer" parent="UI/Contents/Margin/HBoxContainer/UIContainer/ButtonContainer"]
+layout_mode = 2
+alignment = 2
+
+[node name="Slot5" type="TextureButton" parent="UI/Contents/Margin/HBoxContainer/UIContainer/ButtonContainer/InventoryRow3"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+script = ExtResource("35_trn1o")
+_index = 4
+_panelPath = NodePath("Panel")
+_spritePath = NodePath("Panel/Sprite2D")
+_inspectPath = NodePath("Inspect")
+_inspectTexPath = NodePath("Inspect/TextureRect")
+
+[node name="Panel" type="Panel" parent="UI/Contents/Margin/HBoxContainer/UIContainer/ButtonContainer/InventoryRow3/Slot5"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+offset_left = -0.5
+offset_right = 99.5
+offset_bottom = 100.0
+
+[node name="Sprite2D" type="Sprite2D" parent="UI/Contents/Margin/HBoxContainer/UIContainer/ButtonContainer/InventoryRow3/Slot5/Panel"]
+position = Vector2(50, 50)
+scale = Vector2(0.2, 0.2)
+
+[node name="Inspect" type="Button" parent="UI/Contents/Margin/HBoxContainer/UIContainer/ButtonContainer/InventoryRow3/Slot5"]
+layout_mode = 0
+offset_left = 8.5
+offset_top = 76.0
+offset_right = 24.5
+offset_bottom = 92.0
+flat = true
+
+[node name="TextureRect" type="TextureRect" parent="UI/Contents/Margin/HBoxContainer/UIContainer/ButtonContainer/InventoryRow3/Slot5/Inspect"]
+layout_mode = 0
+offset_left = 1.0
+offset_right = 15.975
+offset_bottom = 15.525
+texture = ExtResource("36_dcn4d")
+expand_mode = 1
+flip_h = true
+
+[node name="Slot6" type="TextureButton" parent="UI/Contents/Margin/HBoxContainer/UIContainer/ButtonContainer/InventoryRow3"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+script = ExtResource("35_trn1o")
+_index = 5
+_panelPath = NodePath("Panel")
+_spritePath = NodePath("Panel/Sprite2D")
+_inspectPath = NodePath("Inspect")
+_inspectTexPath = NodePath("Inspect/TextureRect")
+
+[node name="Panel" type="Panel" parent="UI/Contents/Margin/HBoxContainer/UIContainer/ButtonContainer/InventoryRow3/Slot6"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+offset_left = -0.5
+offset_right = 99.5
+offset_bottom = 100.0
+
+[node name="Sprite2D" type="Sprite2D" parent="UI/Contents/Margin/HBoxContainer/UIContainer/ButtonContainer/InventoryRow3/Slot6/Panel"]
+position = Vector2(50, 50)
+scale = Vector2(0.2, 0.2)
+
+[node name="Inspect" type="Button" parent="UI/Contents/Margin/HBoxContainer/UIContainer/ButtonContainer/InventoryRow3/Slot6"]
+layout_mode = 0
+offset_left = 8.5
+offset_top = 76.0
+offset_right = 24.5
+offset_bottom = 92.0
+flat = true
+
+[node name="TextureRect" type="TextureRect" parent="UI/Contents/Margin/HBoxContainer/UIContainer/ButtonContainer/InventoryRow3/Slot6/Inspect"]
+layout_mode = 0
+offset_left = 1.0
+offset_right = 15.975
+offset_bottom = 15.525
+texture = ExtResource("36_dcn4d")
+expand_mode = 1
+flip_h = true
+
+[node name="InventoryRow4" type="HBoxContainer" parent="UI/Contents/Margin/HBoxContainer/UIContainer/ButtonContainer"]
+layout_mode = 2
+alignment = 2
+
+[node name="Slot7" type="TextureButton" parent="UI/Contents/Margin/HBoxContainer/UIContainer/ButtonContainer/InventoryRow4"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+script = ExtResource("35_trn1o")
+_index = 6
+_panelPath = NodePath("Panel")
+_spritePath = NodePath("Panel/Sprite2D")
+_inspectPath = NodePath("Inspect")
+_inspectTexPath = NodePath("../Slot8/Inspect/TextureRect")
+
+[node name="Panel" type="Panel" parent="UI/Contents/Margin/HBoxContainer/UIContainer/ButtonContainer/InventoryRow4/Slot7"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+offset_left = -0.5
+offset_right = 99.5
+offset_bottom = 100.0
+
+[node name="Sprite2D" type="Sprite2D" parent="UI/Contents/Margin/HBoxContainer/UIContainer/ButtonContainer/InventoryRow4/Slot7/Panel"]
+position = Vector2(50, 50)
+scale = Vector2(0.2, 0.2)
+
+[node name="Inspect" type="Button" parent="UI/Contents/Margin/HBoxContainer/UIContainer/ButtonContainer/InventoryRow4/Slot7"]
+layout_mode = 0
+offset_left = 8.5
+offset_top = 76.0
+offset_right = 24.5
+offset_bottom = 92.0
+flat = true
+
+[node name="TextureRect" type="TextureRect" parent="UI/Contents/Margin/HBoxContainer/UIContainer/ButtonContainer/InventoryRow4/Slot7/Inspect"]
+layout_mode = 0
+offset_left = 1.0
+offset_right = 15.975
+offset_bottom = 15.525
+texture = ExtResource("36_dcn4d")
+expand_mode = 1
+flip_h = true
+
+[node name="Slot8" type="TextureButton" parent="UI/Contents/Margin/HBoxContainer/UIContainer/ButtonContainer/InventoryRow4"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+script = ExtResource("35_trn1o")
+_index = 7
+_panelPath = NodePath("Panel")
+_spritePath = NodePath("Panel/Sprite2D")
+_inspectPath = NodePath("Inspect")
+_inspectTexPath = NodePath("Inspect/TextureRect")
+
+[node name="Panel" type="Panel" parent="UI/Contents/Margin/HBoxContainer/UIContainer/ButtonContainer/InventoryRow4/Slot8"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+offset_left = -0.5
+offset_right = 99.5
+offset_bottom = 100.0
+
+[node name="Sprite2D" type="Sprite2D" parent="UI/Contents/Margin/HBoxContainer/UIContainer/ButtonContainer/InventoryRow4/Slot8/Panel"]
+position = Vector2(50, 50)
+scale = Vector2(0.2, 0.2)
+
+[node name="Inspect" type="Button" parent="UI/Contents/Margin/HBoxContainer/UIContainer/ButtonContainer/InventoryRow4/Slot8"]
+layout_mode = 0
+offset_left = 8.5
+offset_top = 76.0
+offset_right = 24.5
+offset_bottom = 92.0
+flat = true
+
+[node name="TextureRect" type="TextureRect" parent="UI/Contents/Margin/HBoxContainer/UIContainer/ButtonContainer/InventoryRow4/Slot8/Inspect"]
+layout_mode = 0
+offset_left = 1.0
+offset_right = 15.975
+offset_bottom = 15.525
+texture = ExtResource("36_dcn4d")
+expand_mode = 1
+flip_h = true

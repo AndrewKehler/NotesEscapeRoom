@@ -1,0 +1,38 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://c5qq0coiqhv8v"
+path.s3tc="res://.godot/imported/TVStand_TVBodynormal.jpg-b0e2f3a53f54d92d0b2540ad35329ad5.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
+generator_parameters={
+"md5": "0d388c39616dc390bccd496f3d3f8db9"
+}
+
+[deps]
+
+source_file="res://Models/Textures/TVStand/TVStand_TVBodynormal.jpg"
+dest_files=["res://.godot/imported/TVStand_TVBodynormal.jpg-b0e2f3a53f54d92d0b2540ad35329ad5.s3tc.ctex"]
+
+[params]
+
+compress/mode=2
+compress/high_quality=false
+compress/lossy_quality=0.7
+compress/hdr_compression=1
+compress/normal_map=1
+compress/channel_pack=0
+mipmaps/generate=true
+mipmaps/limit=-1
+roughness/mode=1
+roughness/src_normal="res://Models/TVStand_TVBodynormal.jpg"
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/normal_map_invert_y=false
+process/hdr_as_srgb=false
+process/hdr_clamp_exposure=false
+process/size_limit=0
+detect_3d/compress_to=0

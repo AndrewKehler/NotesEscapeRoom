@@ -1,0 +1,38 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://eew8784kqylh"
+path.s3tc="res://.godot/imported/TVSDoorL_TVSdoorRoughness.png-7db482d093da521d990ab5c59bfb28aa.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
+generator_parameters={
+"md5": "038ee4c9cfce79c1164570836b4a434a"
+}
+
+[deps]
+
+source_file="res://Models/Textures/TVStand/DoorL/TVSDoorL_TVSdoorRoughness.png"
+dest_files=["res://.godot/imported/TVSDoorL_TVSdoorRoughness.png-7db482d093da521d990ab5c59bfb28aa.s3tc.ctex"]
+
+[params]
+
+compress/mode=2
+compress/high_quality=false
+compress/lossy_quality=0.7
+compress/hdr_compression=1
+compress/normal_map=0
+compress/channel_pack=0
+mipmaps/generate=true
+mipmaps/limit=-1
+roughness/mode=0
+roughness/src_normal=""
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/normal_map_invert_y=false
+process/hdr_as_srgb=false
+process/hdr_clamp_exposure=false
+process/size_limit=0
+detect_3d/compress_to=0
