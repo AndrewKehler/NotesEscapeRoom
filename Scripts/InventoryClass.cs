@@ -38,12 +38,15 @@ public partial class InventoryClass : Resource
 		{
 			temp = Inventory[index];
 			Inventory[index] = null;
+			Count--;
 			
 		}
 		shuffle();
 		EmitSignal(SignalName.InventoryUpdated);
 		return temp;
 	}
+	//removes an item from the inven by searching for an ID.
+	//Returns an exception or the removed item. 
 	public ItemClass RemoveID(string id)
 	{
 		ItemClass temp = null;
@@ -53,6 +56,7 @@ public partial class InventoryClass : Resource
 			{
 				temp = Inventory[i];
 				Inventory[i] = null;
+				Count--;
 				shuffle();
 				EmitSignal(SignalName.InventoryUpdated);
 				return temp;
@@ -61,6 +65,8 @@ public partial class InventoryClass : Resource
 		throw new Exception("item not found.");
 	}
 
+	//Swaps an input item with the item at a specified index.
+	//outputs the item that was at the index before the swap.
 	public ItemClass changeAt(int index, ItemClass item)
 	{
 		ItemClass temp = Inventory[index];
@@ -106,6 +112,9 @@ public partial class InventoryClass : Resource
 		}
 	}
 	
-
+	public int getCount()
+	{
+		return Count;
+	}
 
 }

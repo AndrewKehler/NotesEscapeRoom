@@ -105,6 +105,7 @@ public partial class InventoryPanel : TextureButton
 		{
 			selected = false;
 			Globals.selectedPanel = -1;
+			Globals.selectedItem = "";
 			style.SetBorderWidthAll(0);
 			inspectBtn.Visible = false;
 		}

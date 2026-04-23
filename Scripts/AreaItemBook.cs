@@ -9,37 +9,49 @@ public partial class AreaItemBook : AreaItem
 		{
 			if (eventMouse.Pressed && eventMouse.ButtonIndex == MouseButton.Left)
 			{
+				GD.Print(Globals.selectedItem);
 				
 				try
 				{   
 					if(!Globals.hasBook){
 						GD.Print("b1");
+						
 						Item.Collected = true;
 						Globals.hasBook = true;
 						Globals.Inventory.Add(Item);
 						GetChild(this.GetChildCount() - 1).QueueFree();
+						Item = null;
 					}
 					else
 					{
-						if(!Item.Collected && Globals.IsIn(Globals.selectedItem, allowInstance))
+						if(Item != null && Globals.IsIn(Globals.selectedItem, allowInstance))
 						{   
 							GD.Print("b2");
-							Item= Globals.Inventory.changeAt(Globals.selectedPanel, Item);
+							Item.Collected = true;
+							
+							var old = Globals.Inventory.changeAt(Globals.selectedPanel, Item);
+							Globals.selectedItem = Item.ItemID;
+							old.Collected = false;
 							GetChild(this.GetChildCount()-1).QueueFree();
-							setItem(Item);
+							setItem(old);
 		
-						}else if(Item.Collected && Globals.IsIn(Globals.selectedItem, allowInstance))
+						}else if(Item == null && Globals.IsIn(Globals.selectedItem, allowInstance))
 						{
 							GD.Print("b3");
-							
-							setItem(Globals.Inventory.Get(Globals.selectedPanel));
+							Item = Globals.Inventory.Get(Globals.selectedPanel);
+							setItem(Item);
 							Item.Collected = false;
 							Globals.Inventory.RemoveAt(Globals.selectedPanel);
 							Globals.hasBook = false;
 							
 						}
+						GD.Print(Globals.Inventory.getCount());
 					}
-				}catch(NullReferenceException){}
+				}
+				catch (NullReferenceException)
+				{
+					GD.Print("bull");
+				}
 				
 			}
 		}

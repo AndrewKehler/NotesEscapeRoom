@@ -66,7 +66,11 @@ public partial class AreaItem : Area3D
 							Globals.Inventory.Add(Item);
 							GetChild(this.GetChildCount() - 1).QueueFree();
 						}
-					}catch(NullReferenceException){}
+					}
+					catch (NullReferenceException)
+					{
+						GD.Print("nul!");
+					}
 				}
 			}
 		}
@@ -82,6 +86,14 @@ public partial class AreaItem : Area3D
 		AddChild(meshScene.Instantiate());
 	}
 
-
+	public void removeItem()
+	{
+		Item = null;
+		ItemID = "";
+		Texture = null;
+		hasScene = false;
+		meshScene = null;
+		GetChild(this.GetChildCount()-1).QueueFree();
+	}
 
 }

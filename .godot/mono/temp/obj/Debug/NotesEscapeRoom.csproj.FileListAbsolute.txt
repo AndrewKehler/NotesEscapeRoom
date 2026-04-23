@@ -15,3 +15,4 @@ C:\Users\anggr\OneDrive\Documents\Godot\NotesEscapeRoom\notesescaperoom\.godot\m
 C:\Users\anggr\OneDrive\Documents\Godot\NotesEscapeRoom\notesescaperoom\.godot\mono\temp\obj\Debug\NotesEscapeRoom.pdb
 C:\Users\anggr\OneDrive\Documents\Godot\NotesEscapeRoom\notesescaperoom\.godot\mono\temp\obj\Debug\NotesEscapeRoom.genruntimeconfig.cache
 C:\Users\anggr\OneDrive\Documents\Godot\NotesEscapeRoom\notesescaperoom\.godot\mono\temp\obj\Debug\ref\NotesEscapeRoom.dll
+C:\Users\anggr\OneDrive\Documents\Godot\NotesEscapeRoom\notesescaperoom\.godot\mono\temp\obj\Debug\NotesEscapeRoom.sourcelink.json
