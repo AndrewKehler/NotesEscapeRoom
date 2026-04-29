@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://bd23bfgdwttr4"]
+
+[ext_resource type="PackedScene" uid="uid://yat6h45lk5pi" path="res://Models/BookCyan.glb" id="1_q4qlp"]
+
+[node name="BookCyan" instance=ExtResource("1_q4qlp")]
+
+[node name="Books1_007" parent="." index="0"]
+transform = Transform3D(0, 0, -1, 0, 1, 0, 1, 0, 0, 0.00156951, 0.0831264, -0.00198455)

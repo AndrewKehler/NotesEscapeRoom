@@ -1,4 +1,4 @@
-[gd_scene load_steps=63 format=3 uid="uid://bprs0m3p124ew"]
+[gd_scene load_steps=69 format=3 uid="uid://bprs0m3p124ew"]
 
 [ext_resource type="PackedScene" uid="uid://bro8cnxpfx1l8" path="res://Models/trim.glb" id="1_ydffh"]
 [ext_resource type="PackedScene" uid="uid://exqbbg8awp2q" path="res://Models/walls.glb" id="2_uo5d6"]
@@ -19,16 +19,22 @@
 [ext_resource type="Texture2D" uid="uid://cgjm8cghlrpfm" path="res://Sprites/BookPink.png" id="14_8b2x4"]
 [ext_resource type="PackedScene" uid="uid://dlhtikijxrpwr" path="res://Scenes/BookPink.tscn" id="14_odo7u"]
 [ext_resource type="PackedScene" uid="uid://bjnx2lxnuuqq" path="res://Models/BirdOfParadise.glb" id="15_tkd15"]
+[ext_resource type="Texture2D" uid="uid://bate073qveew" path="res://Sprites/BookCyan.png" id="16_q8luu"]
 [ext_resource type="PackedScene" uid="uid://dcsxmh2aoa0at" path="res://Scenes/wall_lights.tscn" id="16_wlaoh"]
 [ext_resource type="PackedScene" uid="uid://dgw683kp34vl0" path="res://Scenes/throw_pillow.tscn" id="17_cyf6o"]
 [ext_resource type="PackedScene" uid="uid://cc1cf30uwsfwa" path="res://Scenes/armchair.tscn" id="17_vucii"]
+[ext_resource type="Texture2D" uid="uid://cqh8uisnqgq04" path="res://Sprites/BookLBlue.png" id="18_2c833"]
+[ext_resource type="Texture2D" uid="uid://bmuejlx2352ii" path="res://Sprites/BookYellow.png" id="18_uwhr1"]
 [ext_resource type="PackedScene" uid="uid://dtxrtst2seojj" path="res://Scenes/piano.tscn" id="18_vucii"]
 [ext_resource type="PackedScene" uid="uid://dep4bjih13bds" path="res://Scenes/porcelain_lamp.tscn" id="19_1b816"]
 [ext_resource type="Script" uid="uid://csgaxkk2qk7u1" path="res://Scripts/AreaInteraction.cs" id="19_1fl1y"]
+[ext_resource type="Texture2D" uid="uid://dtmoqmtmct1yt" path="res://Sprites/BookBlue.png" id="19_2c833"]
 [ext_resource type="PackedScene" uid="uid://cj4sayenk2noo" path="res://Scenes/fancy_lamp.tscn" id="19_6nx3j"]
 [ext_resource type="Script" uid="uid://pifhuqs0e3ew" path="res://Scripts/AreaLocation.cs" id="19_p87fh"]
 [ext_resource type="PackedScene" uid="uid://bmix6sjka17vl" path="res://Models/HangingLight.glb" id="20_6nx3j"]
+[ext_resource type="Texture2D" uid="uid://bbocvbe7w4hmq" path="res://Sprites/BookGreen.png" id="20_0140e"]
 [ext_resource type="PackedScene" uid="uid://cjr1r5agxdjyo" path="res://Models/Nightstand.glb" id="20_tkd15"]
+[ext_resource type="Texture2D" uid="uid://bgjwnqrv8s5nb" path="res://Sprites/BookPurple.png" id="21_chd3i"]
 [ext_resource type="Script" uid="uid://d1f3sfqc3vwtb" path="res://Scripts/AreaItem.cs" id="21_sp2ca"]
 [ext_resource type="Texture2D" uid="uid://dpl4srjtwxr05" path="res://Sprites/matchStick.png" id="22_a06rh"]
 [ext_resource type="PackedScene" uid="uid://ctoi0ky4avk4i" path="res://Models/Rug.glb" id="22_wlaoh"]
@@ -168,7 +174,7 @@ ItemID = "BookOrange"
 Texture = ExtResource("11_q6vta")
 visibleOn = "BookshelfL"
 isInstancer = true
-allowInstance = PackedStringArray("BookOrange", "BookPink")
+allowInstance = PackedStringArray("BookOrange", "BookPink", "BookCyan", "BookYellow", "BookBlue", "BookGreen", "BookPurple", "BookLBlue")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Furniture/AreaBkShlfL/BookshelfLarge/BookPuzzle/Slot1/ASlot1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0777602, 0)
@@ -178,7 +184,7 @@ shape = SubResource("BoxShape3D_yia4c")
 visible = false
 
 [node name="Slot2" type="Node3D" parent="Furniture/AreaBkShlfL/BookshelfLarge/BookPuzzle"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.06)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.0570545)
 
 [node name="ASlot2" type="Area3D" parent="Furniture/AreaBkShlfL/BookshelfLarge/BookPuzzle/Slot2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.927903, 1.44837, 0.132236)
@@ -187,13 +193,146 @@ ItemID = "BookPink"
 Texture = ExtResource("14_8b2x4")
 visibleOn = "BookshelfL"
 isInstancer = true
-allowInstance = PackedStringArray("BookOrange", "BookPink")
+allowInstance = PackedStringArray("BookOrange", "BookPink", "BookCyan", "BookLBlue", "BookYellow", "BookBlue", "BookGreen", "BookPurple")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Furniture/AreaBkShlfL/BookshelfLarge/BookPuzzle/Slot2/ASlot2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0767984, 0)
 shape = SubResource("BoxShape3D_yia4c")
 
 [node name="BookPink2" parent="Furniture/AreaBkShlfL/BookshelfLarge/BookPuzzle/Slot2/ASlot2" instance=ExtResource("14_odo7u")]
+visible = false
+
+[node name="Slot3" type="Node3D" parent="Furniture/AreaBkShlfL/BookshelfLarge/BookPuzzle"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.138309)
+
+[node name="ASlot2" type="Area3D" parent="Furniture/AreaBkShlfL/BookshelfLarge/BookPuzzle/Slot3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.927903, 1.44837, 0.132236)
+script = ExtResource("11_yia4c")
+ItemID = "BookCyan"
+Texture = ExtResource("16_q8luu")
+visibleOn = "BookshelfL"
+isInstancer = true
+allowInstance = PackedStringArray("BookOrange", "BookPink", "BookCyan", "BookLBlue", "BookYellow", "BookBlue", "BookGreen", "BookPurple")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Furniture/AreaBkShlfL/BookshelfLarge/BookPuzzle/Slot3/ASlot2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0767984, 0)
+shape = SubResource("BoxShape3D_yia4c")
+
+[node name="BookPink2" parent="Furniture/AreaBkShlfL/BookshelfLarge/BookPuzzle/Slot3/ASlot2" instance=ExtResource("14_odo7u")]
+visible = false
+
+[node name="Slot4" type="Node3D" parent="Furniture/AreaBkShlfL/BookshelfLarge/BookPuzzle"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.211504)
+
+[node name="ASlot2" type="Area3D" parent="Furniture/AreaBkShlfL/BookshelfLarge/BookPuzzle/Slot4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.927903, 1.44837, 0.132236)
+script = ExtResource("11_yia4c")
+ItemID = "BookCyan"
+Texture = ExtResource("16_q8luu")
+visibleOn = "BookshelfL"
+isInstancer = true
+allowInstance = PackedStringArray("BookOrange", "BookPink", "BookCyan", "BookLBlue", "BookBlue", "BookYellow", "BookGreen", "BookPurple")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Furniture/AreaBkShlfL/BookshelfLarge/BookPuzzle/Slot4/ASlot2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0767984, 0)
+shape = SubResource("BoxShape3D_yia4c")
+
+[node name="BookPink2" parent="Furniture/AreaBkShlfL/BookshelfLarge/BookPuzzle/Slot4/ASlot2" instance=ExtResource("14_odo7u")]
+visible = false
+
+[node name="Slot5" type="Node3D" parent="Furniture/AreaBkShlfL/BookshelfLarge/BookPuzzle"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.269778)
+
+[node name="ASlot2" type="Area3D" parent="Furniture/AreaBkShlfL/BookshelfLarge/BookPuzzle/Slot5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.927903, 1.44837, 0.132236)
+script = ExtResource("11_yia4c")
+ItemID = "BookLBlue"
+Texture = ExtResource("18_2c833")
+visibleOn = "BookshelfL"
+isInstancer = true
+allowInstance = PackedStringArray("BookOrange", "BookPink", "BookCyan", "BookLBlue", "BookYellow", "BookGreen", "BookBlue", "BookPurple")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Furniture/AreaBkShlfL/BookshelfLarge/BookPuzzle/Slot5/ASlot2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0767984, 0)
+shape = SubResource("BoxShape3D_yia4c")
+
+[node name="BookPink2" parent="Furniture/AreaBkShlfL/BookshelfLarge/BookPuzzle/Slot5/ASlot2" instance=ExtResource("14_odo7u")]
+visible = false
+
+[node name="Slot6" type="Node3D" parent="Furniture/AreaBkShlfL/BookshelfLarge/BookPuzzle"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.856751, 1.38571, 0.63153)
+
+[node name="ASlot2" type="Area3D" parent="Furniture/AreaBkShlfL/BookshelfLarge/BookPuzzle/Slot6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0652893, 0.0610182, 0.061736)
+script = ExtResource("11_yia4c")
+ItemID = "BookYellow"
+Texture = ExtResource("18_uwhr1")
+visibleOn = "BookshelfL"
+isInstancer = true
+allowInstance = PackedStringArray("BookOrange", "BookPink", "BookCyan", "BookLBlue", "BookYellow", "BookGreen", "BookBlue", "BookPurple")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Furniture/AreaBkShlfL/BookshelfLarge/BookPuzzle/Slot6/ASlot2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0767984, 0)
+shape = SubResource("BoxShape3D_yia4c")
+
+[node name="BookPink2" parent="Furniture/AreaBkShlfL/BookshelfLarge/BookPuzzle/Slot6/ASlot2" instance=ExtResource("14_odo7u")]
+visible = false
+
+[node name="Slot7" type="Node3D" parent="Furniture/AreaBkShlfL/BookshelfLarge/BookPuzzle"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.856751, 1.38571, 0.694938)
+
+[node name="ASlot2" type="Area3D" parent="Furniture/AreaBkShlfL/BookshelfLarge/BookPuzzle/Slot7"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0652893, 0.0610182, 0.061736)
+script = ExtResource("11_yia4c")
+ItemID = "BookBlue"
+Texture = ExtResource("19_2c833")
+visibleOn = "BookshelfL"
+isInstancer = true
+allowInstance = PackedStringArray("BookOrange", "BookPink", "BookCyan", "BookLBlue", "BookYellow", "BookGreen", "BookBlue", "BookPurple")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Furniture/AreaBkShlfL/BookshelfLarge/BookPuzzle/Slot7/ASlot2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0767984, 0)
+shape = SubResource("BoxShape3D_yia4c")
+
+[node name="BookPink2" parent="Furniture/AreaBkShlfL/BookshelfLarge/BookPuzzle/Slot7/ASlot2" instance=ExtResource("14_odo7u")]
+visible = false
+
+[node name="Slot8" type="Node3D" parent="Furniture/AreaBkShlfL/BookshelfLarge/BookPuzzle"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.856751, 1.38571, 0.758765)
+
+[node name="ASlot2" type="Area3D" parent="Furniture/AreaBkShlfL/BookshelfLarge/BookPuzzle/Slot8"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0652893, 0.0610182, 0.061736)
+script = ExtResource("11_yia4c")
+ItemID = "BookGreen"
+Texture = ExtResource("20_0140e")
+visibleOn = "BookshelfL"
+isInstancer = true
+allowInstance = PackedStringArray("BookOrange", "BookPink", "BookCyan", "BookLBlue", "BookYellow", "BookGreen", "BookBlue", "BookPurple")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Furniture/AreaBkShlfL/BookshelfLarge/BookPuzzle/Slot8/ASlot2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0767984, 0)
+shape = SubResource("BoxShape3D_yia4c")
+
+[node name="BookPink2" parent="Furniture/AreaBkShlfL/BookshelfLarge/BookPuzzle/Slot8/ASlot2" instance=ExtResource("14_odo7u")]
+visible = false
+
+[node name="Slot9" type="Node3D" parent="Furniture/AreaBkShlfL/BookshelfLarge/BookPuzzle"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.856751, 1.38571, 0.861071)
+
+[node name="ASlot2" type="Area3D" parent="Furniture/AreaBkShlfL/BookshelfLarge/BookPuzzle/Slot9"]
+transform = Transform3D(1, 0, 0, 0, 0.96188, 0.273472, 0, -0.273472, 0.96188, 0.0652893, 0.0610182, 0.061736)
+script = ExtResource("11_yia4c")
+ItemID = "BookPurple"
+Texture = ExtResource("21_chd3i")
+visibleOn = "BookshelfL"
+isInstancer = true
+allowInstance = PackedStringArray("BookOrange", "BookPink", "BookCyan", "BookLBlue", "BookYellow", "BookGreen", "BookBlue", "BookPurple")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Furniture/AreaBkShlfL/BookshelfLarge/BookPuzzle/Slot9/ASlot2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0767984, 0)
+shape = SubResource("BoxShape3D_yia4c")
+
+[node name="BookPink2" parent="Furniture/AreaBkShlfL/BookshelfLarge/BookPuzzle/Slot9/ASlot2" instance=ExtResource("14_odo7u")]
 visible = false
 
 [node name="Couch" parent="Furniture" instance=ExtResource("8_bplf3")]
