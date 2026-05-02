@@ -18,10 +18,18 @@ public partial class AreaItem : Area3D
 
 	public override void _Ready()
 	{
-		Item = new ItemClass(ItemID, Texture, false, hasScene);
 		hitBox = GetChild(0) as CollisionShape3D;
-		meshScene = ResourceLoader.Load<PackedScene>("res://Scenes/" + ItemID + ".tscn");
-		AddChild(meshScene.Instantiate());
+		if(ItemID != null){
+			Item = new ItemClass(ItemID, Texture, false, hasScene);
+			meshScene = ResourceLoader.Load<PackedScene>("res://Scenes/" + ItemID + ".tscn");
+			AddChild(meshScene.Instantiate());
+		}
+		else
+		{
+			GD.Print("sdf");
+			Item = null;
+			meshScene = null;
+		}
 		this.InputEvent += on_input_event;
 	}
 	public override void _Process(double delta)
