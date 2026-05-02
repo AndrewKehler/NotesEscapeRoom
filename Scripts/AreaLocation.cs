@@ -1,5 +1,6 @@
 using Godot;
 using System;
+using System.Linq;
 
 public partial class AreaLocation : Area3D
 {
@@ -9,7 +10,8 @@ public partial class AreaLocation : Area3D
 
 	[Export] bool changeFOV;
 	[Export] float fovChange;
-
+	[Export] bool isClue;
+	[Export] String clueName; 
 	[Export] String locationID;
 	CollisionShape3D hitBox;
 
@@ -48,8 +50,12 @@ public partial class AreaLocation : Area3D
 					Globals.camData.FOV = fovChange;
 					SignalMaster.SetCameraFOV(fovChange);
 				}
-
-				GD.Print(Globals.camData.Location, " , ", Globals.camStack.Peek().Location);
+				if (isClue && !Globals.IsIn(clueName, Globals.clues))
+				{
+					Globals.clues[Globals.clueCnt] = clueName;
+					Globals.clueCnt++;
+					
+				}
 			}
 		}
 	}

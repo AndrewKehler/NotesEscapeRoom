@@ -1,4 +1,5 @@
 res://Scenes/MainRoom.tscn
+res://Scripts/Globals.cs
 res://Scenes/tvs_drawer.tscn
 res://Scenes/BookOrange.tscn
 res://Scenes/matchStick.tscn
@@ -7,9 +8,9 @@ res://Scenes/BookCyan.tscn
 res://Scenes/BookYellow.tscn
 res://Scenes/BookGreen.tscn
 res://Scenes/BookPurple.tscn
+res://Scenes/BookBOrange.tscn
 res://Scripts/AreaChangeInsp.cs
 res://Scripts/UIButton.cs
-res://Scripts/Globals.cs
 res://Scripts/InventoryPanel.cs
 res://Scripts/AreaInteraction.cs
 res://Scripts/SignalMaster.cs
@@ -21,4 +22,3 @@ res://Scripts/ItemClass.cs
 res://Scripts/AreaItmInsp.cs
 res://Scripts/AreaLocation.cs
 res://Scripts/InspectContainer.cs
-res://Scenes/BookBOrange.tscn

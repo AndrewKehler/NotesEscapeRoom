@@ -26,7 +26,6 @@ public partial class AreaItemBook : AreaItem
 					{
 						if(Item != null && Globals.IsIn(Globals.selectedItem, allowInstance))
 						{   
-							GD.Print("b2");
 							Item.Collected = true;
 							
 							var old = Globals.Inventory.changeAt(Globals.selectedPanel, Item);
@@ -37,7 +36,6 @@ public partial class AreaItemBook : AreaItem
 		
 						}else if(Item == null && Globals.IsIn(Globals.selectedItem, allowInstance))
 						{
-							GD.Print("b3");
 							Item = Globals.Inventory.Get(Globals.selectedPanel);
 							setItem(Item);
 							Item.Collected = false;
@@ -45,7 +43,6 @@ public partial class AreaItemBook : AreaItem
 							Globals.hasBook = false;
 							
 						}
-						GD.Print(Globals.Inventory.getCount());
 					}
 				}
 				catch (NullReferenceException)

@@ -16,7 +16,9 @@ public partial class Globals : Node
 
     public static string inspectionScene = "";
 
-    public static string[] bookInstances = ["OrangeBook"];
+    
+    public static string[] clues = new string[10];
+    public static int clueCnt = 0;
 
     public static bool hasBook = false;    
     public static bool IsIn(object key, object[] array)
@@ -34,6 +36,8 @@ public partial class Globals : Node
         }   
         return false;
     }
+
+
 
     public static Godot.Vector3 ToDeg(Godot.Vector3 vec)
     {

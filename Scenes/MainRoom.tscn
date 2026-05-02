@@ -1,4 +1,4 @@
-[gd_scene load_steps=68 format=3 uid="uid://bprs0m3p124ew"]
+[gd_scene load_steps=70 format=3 uid="uid://bprs0m3p124ew"]
 
 [ext_resource type="PackedScene" uid="uid://bro8cnxpfx1l8" path="res://Models/trim.glb" id="1_ydffh"]
 [ext_resource type="PackedScene" uid="uid://exqbbg8awp2q" path="res://Models/walls.glb" id="2_uo5d6"]
@@ -74,6 +74,12 @@ size = Vector3(0.375183, 0.325439, 0.388641)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_a06rh"]
 size = Vector3(0.0908003, 0.0191574, 0.0229645)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0140e"]
+size = Vector3(1.66077, 1.16882, 0.961761)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_7oam2"]
+size = Vector3(0.170227, 0.227509, 0.128418)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_q6vta"]
 size = Vector3(1.61133, 1.03637, 1.005)
@@ -276,7 +282,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0767984, 0)
 shape = SubResource("BoxShape3D_yia4c")
 
 [node name="Slot8" type="Node3D" parent="Furniture/AreaBkShlfL/BookshelfLarge/BookPuzzle"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.856751, 1.38571, 0.758765)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.856751, 1.38571, 0.756838)
 
 [node name="ASlot2" type="Area3D" parent="Furniture/AreaBkShlfL/BookshelfLarge/BookPuzzle/Slot8"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0652893, 0.0610182, 0.061736)
@@ -292,7 +298,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0767984, 0)
 shape = SubResource("BoxShape3D_yia4c")
 
 [node name="Slot9" type="Node3D" parent="Furniture/AreaBkShlfL/BookshelfLarge/BookPuzzle"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.856751, 1.38571, 0.823401)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.856751, 1.38571, 0.817629)
 
 [node name="ASlot2" type="Area3D" parent="Furniture/AreaBkShlfL/BookshelfLarge/BookPuzzle/Slot9"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0652893, 0.0610182, 0.061736)
@@ -308,7 +314,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0767984, 0)
 shape = SubResource("BoxShape3D_yia4c")
 
 [node name="Slot10" type="Node3D" parent="Furniture/AreaBkShlfL/BookshelfLarge/BookPuzzle"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.856751, 1.38571, 0.889257)
+transform = Transform3D(1, 0, 0, 0, 0.995631, 0.0933785, 0, -0.0933785, 0.995631, 0.856751, 1.37989, 0.8918)
 
 [node name="ASlot2" type="Area3D" parent="Furniture/AreaBkShlfL/BookshelfLarge/BookPuzzle/Slot10"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0652893, 0.0610182, 0.061736)
@@ -324,7 +330,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0767984, 0)
 shape = SubResource("BoxShape3D_yia4c")
 
 [node name="Slot11" type="Node3D" parent="Furniture/AreaBkShlfL/BookshelfLarge/BookPuzzle"]
-transform = Transform3D(1, 0, 0, 0, 0.987164, 0.159709, 0, -0.159709, 0.987164, 0.856751, 1.38571, 1.19987)
+transform = Transform3D(1, 0, 0, 0, 1, -0.000872537, 0, 0.000872537, 1, 0.856751, 1.38571, 1.191)
 
 [node name="ASlot2" type="Area3D" parent="Furniture/AreaBkShlfL/BookshelfLarge/BookPuzzle/Slot11"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0652893, 0.0610182, 0.061736)
@@ -465,8 +471,35 @@ shape = SubResource("BoxShape3D_a06rh")
 [node name="matchStick" parent="Furniture/LAarmChair/Armchair/AMatch" instance=ExtResource("30_ab07i")]
 visible = false
 
-[node name="Piano" parent="Furniture" instance=ExtResource("18_vucii")]
+[node name="AreaPiano" type="Area3D" parent="Furniture"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -1)
+script = ExtResource("19_p87fh")
+visibleOn = "3"
+cameraPChange = Vector3(0.216, 1.13, 1.044)
+cameraRChange = Vector3(-0.314159, 3.14159, 0)
+locationID = "Piano"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Furniture/AreaPiano"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.744934, 0.611318, 2.85433)
+shape = SubResource("BoxShape3D_0140e")
+
+[node name="Piano" parent="Furniture/AreaPiano" instance=ExtResource("18_vucii")]
+
+[node name="AreaCard" type="Area3D" parent="Furniture/AreaPiano"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.18059, 3.05189)
+script = ExtResource("19_p87fh")
+visibleOn = "Piano"
+cameraPChange = Vector3(0.771, 1.18, 1.669)
+cameraRChange = Vector3(-0.185005, 3.31613, 0)
+changeFOV = true
+fovChange = 54.3
+isClue = true
+clueName = "BDCard"
+locationID = "BDCard"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Furniture/AreaPiano/AreaCard"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.195038, -0.0300751, -0.0900879)
+shape = SubResource("BoxShape3D_7oam2")
 
 [node name="PorcelainLamp2" parent="Furniture" instance=ExtResource("19_1b816")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -1)
@@ -693,7 +726,7 @@ icon_alignment = 1
 expand_icon = true
 script = ExtResource("26_8fu6k")
 TexturePath = NodePath("TextureRect")
-VisibleIn = PackedStringArray("armChair", "standArea", "drawerOne", "BookshelfL")
+VisibleIn = PackedStringArray("armChair", "standArea", "drawerOne", "BookshelfL", "Piano", "BDCard")
 
 [node name="TextureRect" type="TextureRect" parent="UI/Contents/Margin/HBoxContainer/MarginContainer/MainButtonContainer/ButtonD"]
 layout_mode = 0
